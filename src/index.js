@@ -1,3 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
-  // your solution
+
+let x = str.split('').filter(item => item === ")").length
+let y = str.split('').filter(item => item === "(").length
+return (x === y)
+
 }
